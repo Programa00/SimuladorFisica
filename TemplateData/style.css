@@ -1,14 +1,85 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin:0; padding:0; border:0; background:transparent;
+  /*vertical-align: baseline;*/
+}
+
+/* lists */
+.list-full, .list-full li,
+.list-auto, .list-auto li { width: 100%; float: left; display: block; position: relative; }
+.list-auto, .list-auto li { width: auto; }
+
+/* floats */
+.float-l { float: left; }
+.float-r { float: right; }
+
+/* body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+} */
 body { padding: 0; margin: 0 }
 header {
-	min-height: 60px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	border-bottom: 1px solid #ccc;
-	background: #ECECEC;
-	z-index: 2;
-  }
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  background: #ECECEC;
+  z-index: 2;
+}
+
+header h1 {
+  padding: 10px 0 0 10px;
+}
+
+header h1 a {
+  color: #333;
+}
+
+header ul {
+  padding: 15px 10px 0 0;
+}
+
+header li {
+  border-left: 1px solid #ccc;
+}
+
+header li:first-child {
+  border: none;
+}
+
+header li a {
+  display: block;
+  padding: 0 10px;
+  color: #999;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+header li a:hover {
+  color: #333;
+}
+
+input#control-nav {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
 #unity-container { position: absolute }
 #unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
 #unity-container.unity-mobile { width: 100%; height: 100% }
