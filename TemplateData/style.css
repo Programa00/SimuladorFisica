@@ -21,12 +21,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 .float-l { float: left; }
 .float-r { float: right; }
 
-/* body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-  text-shadow: 0 1px 0 #fff;
-} */
 body { padding: 0; margin: 0 }
+
 header {
   min-height: 60px;
   position: fixed;
